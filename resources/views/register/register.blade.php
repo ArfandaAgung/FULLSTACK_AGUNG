@@ -43,7 +43,7 @@
     </div>
     <button class="btn btn-primary w-100 py-2 mb-4" type="submit">Sign in</button>
     <p class="text-black">Sudah mempunyai akun?<a href="/login" class="text-decoration-none"> klik disini.</a></p>
-    <p class="mt-3 mb-3 text-black">&copy; Yao 2024</p>
+    <p class="mt-3 mb-3 text-black">&copy; Agung 2024</p>
   </form>
 </main>
 
