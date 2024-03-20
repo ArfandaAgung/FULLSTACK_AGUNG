@@ -58,6 +58,20 @@
                                 </div>
                             @enderror
                         </div>
+                        <div class="form-floating">
+                            <input type="date"
+                                class="form-control @error('tglUnggah')
+                                is-invalid
+                                @enderror"
+                                id="tglUnggah" name="tglUnggah" placeholder="tglUnggah"
+                                value="{{ old('tglUnggah') }}" required>
+                                <label for="tglUnggah"></label>
+                                @error('tglUnggah')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                                @enderror
+                        </div>
 
                         <button class="btn btn-brown w-100 py-2 fw-semibold mt-3" type="submit">Create</button>
 

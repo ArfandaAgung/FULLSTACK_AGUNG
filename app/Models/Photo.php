@@ -10,9 +10,12 @@ class Photo extends Model
     use HasFactory;
     protected $table = 'photos';
 
-    protected $fillable = [
-        'image',
-        'judulFoto',
-        'deskripsiFoto'
-    ];
+    // protected $fillable = [
+    //     'image',
+    //     'judulFoto',
+    //     'deskripsiFoto',
+    //     'tglUnggah'
+    // ];
+
+    protected $guarded = ['id'];
 }

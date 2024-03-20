@@ -24,6 +24,7 @@ class PhotoController extends Controller
     public function create()
     {
         return view('Dashboard.Photos.Create');
+    
     }
 
     /**
@@ -34,7 +35,8 @@ class PhotoController extends Controller
         $validatedData = $request->validate([
             'image' => 'required|file|image|max:2048',
             'judulFoto' => 'required',
-            'deskripsiFoto' => 'required'
+            'deskripsiFoto' => 'required',
+            'tglUnggah' => 'required'
         ]);
 
         if ($request->file('image')) {
@@ -72,7 +74,8 @@ class PhotoController extends Controller
         $rules = [
             'image' => 'file|image|max:2048',
             'judulFoto' => 'required',
-            'deskripsiFoto' => 'required'
+            'deskripsiFoto' => 'required',
+            'tglUnggah' => 'required'
         ];
 
         $validatedData = $request->validate($rules);

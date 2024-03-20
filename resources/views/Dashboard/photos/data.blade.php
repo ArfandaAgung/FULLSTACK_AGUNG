@@ -32,6 +32,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ $photo->judulFoto }}</h5>
                         <p class="card-text">{{ $photo->deskripsiFoto }}</p>
+                        <p class="card-text">{{ $photo->tglUnggah }}</p>
                         <a href="{{ route('photos.edit', $photo->id) }}" class="btn btn-warning">Edit</a>
 
                         <form action="{{ route('photos.destroy', $photo->id) }}" method="POST" class="d-inline">
